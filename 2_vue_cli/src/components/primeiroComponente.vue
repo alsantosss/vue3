@@ -13,6 +13,9 @@ export default {
             nome:"Andre Santos",
             profissao:"programador"
         }
+    },
+    created(){
+        this.nome="José Marinho"
     }
 }
 </script>

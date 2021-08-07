@@ -3,18 +3,21 @@
     <primeiroComponente/>
     <p>Seguem os dados da aplicação --> {{dados}}</p>
     <lifeCyrcle />
+    <pessoa />
   </div>
 </template>
 
 <script>
 import primeiroComponente from './components/primeiroComponente.vue'
 import lifeCyrcle from './components/lifeCyrcle.vue'
+import Pessoa from './components/pessoa.vue'
 
   export default{
     name: 'App',
     components: {
       primeiroComponente,
-      lifeCyrcle
+      lifeCyrcle,
+      Pessoa
     },
     data(){
       return {

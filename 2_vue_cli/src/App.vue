@@ -1,5 +1,6 @@
 <template>
   <div>
+    <cabecalho />
     <primeiroComponente/>
     <p>Seguem os dados da aplicação --> {{dados}}</p>
     <lifeCyrcle />
@@ -11,18 +12,15 @@
 import primeiroComponente from './components/primeiroComponente.vue'
 import lifeCyrcle from './components/lifeCyrcle.vue'
 import Pessoa from './components/pessoa.vue'
+import cabecalho from './components/cabecalho.vue'
 
   export default{
     name: 'App',
     components: {
+      cabecalho,
       primeiroComponente,
       lifeCyrcle,
       Pessoa
-    },
-    data(){
-      return {
-        dados:"Exemplo"
-      }
     },
     created(){
     setTimeout(() => {
@@ -43,3 +41,20 @@ import Pessoa from './components/pessoa.vue'
     }
   }
 </script>
+<style>
+body{
+  background: #333;
+  color: aliceblue;
+}
+a{
+  color:aliceblue;
+  text-decoration: none;
+}
+a:hover{
+  color: green;
+  text-decoration: none;
+}
+.bgemail{
+  background: rgb(70, 105, 172);
+}
+</style>

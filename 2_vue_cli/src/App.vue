@@ -34,7 +34,12 @@ import Pessoa from './components/pessoa.vue'
     setTimeout(() => {
           this.dados="Isso é Absurdo"
     }, 2000);
-      
+      this.lifeCyrcle()
+    },
+    methods:{
+      lifeCyrcle(){
+        console.log("Executou");
+      }
     }
   }
 </script>

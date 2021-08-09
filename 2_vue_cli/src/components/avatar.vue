@@ -4,6 +4,7 @@
     </div>
 </template>
 
+<!-- Quando um link parte do barra "/" entende-se que o caminho inicia-se na pasta /public -->
 <script>
 export default {
     nome:"avatar",
